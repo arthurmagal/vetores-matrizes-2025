@@ -1,10 +1,30 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import application.lista.ListaSimples;
+
 public class Main {
     public static void main(String[] args) {
+
+        //declaracao vetores
         int[] numeros = new int[5];
 
+        //declaracao matrizes
         int[][] matriz = new int[5][3];
+
+        //declaracao lista simples
+        ListaSimples lista = new ListaSimples();
+        lista.adicionar("primeiro");
+        lista.adicionar("segundo");
+        lista.adicionar("terceiro");
+        lista.remover(1);
+
+        List<String> lista2 = new ArrayList<String>();
+        lista2.add("teste");
+
+        System.out.println(lista);
     }
 }
 
